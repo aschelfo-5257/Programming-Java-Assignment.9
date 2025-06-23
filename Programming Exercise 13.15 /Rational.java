@@ -11,7 +11,7 @@ public class Rational {
   }
   public Rational(BigInteger numerator, BigInteger denominator) {
     if (denominator.equals(BigInteger.ZERO)) {
-      throw new IllegalArgumentException("Denominator cannot be zero."); // Cannot have zeroes illegally 
+      throw new IllegalArgumentException("Denominator cannot be zero."); // Cannot have zeroes illegally! 
     }
     // Reduce the fractions
     BigInteger gcd = numerator.gcd(denominator);
@@ -68,7 +68,7 @@ public class Rational {
   }
     
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in); // Ensure to set scanner system 
+    Scanner sc = new Scanner(System.in); // Ensure to set the scanner system. 
 
     System.out.println("Enter first rational (numerator and denominator):");
     BigInteger num1 = sc.nextBigInteger();
