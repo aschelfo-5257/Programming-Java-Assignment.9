@@ -95,7 +95,7 @@ public class Rational {
     } else {
       System.out.println("The rational numbers are not equal.");
     }
-    sc.close();
+    sc.close(); // Ensure that you close the script to avoid any compilation problems.
   }
 // Note: The code is meant to demonstrate creating and working with rational numbers (fractions), allowing the user to add, subtract, multiply, divide, and compare two fractions. The implementation class suggests using the BigInteger for large numbers.
 }    
