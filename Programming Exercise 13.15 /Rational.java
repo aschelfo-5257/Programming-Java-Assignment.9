@@ -9,7 +9,7 @@ public class Rational {
   public Rational() {
       this(BigInteger.ZERO, BigInteger.ONE); // You would need to add BigInteger for zeros and ones.
   }
-  public Rational(BigIntegar numerator, BigInteger denominator) {
+  public Rational(BigInteger numerator, BigInteger denominator) {
     if (denominator.equals(BigInteger.ZERO)) {
       throw new IllegalArgumentException("Denominator cannot be zero."); // Cannot have zeroes illegally 
     }
@@ -49,7 +49,7 @@ public class Rational {
   // Set the division operation by storing the BigInteger before throwing a handle error.
   public Rational divide(Rational other) {
     if (other.numerator.equals(BigInteger.ZERO)) {
-      throw new ArithmetricException("Cannot divide by zero.");
+      throw new ArithmeticException("Cannot divide by zero.");
       // Implementations should handle cases like division by zero by throwing appropriate exceptions.
       // Returns a new Rational that is the quotient: [(a/b) / (c/d) = (ad) / (bc)]
     }
